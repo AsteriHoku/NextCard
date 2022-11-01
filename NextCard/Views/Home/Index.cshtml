@@ -1,0 +1,31 @@
+﻿@*@{
+    ViewData["Title"] = "Home Page";
+    }
+*@
+<style>
+    button {
+            background-color: lightblue;
+            width: 50%;
+            margin: 10px auto;
+            padding: 10px 30px;
+            color: black;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-transform: uppercase;
+            border-style: dashed;
+            border-color: darken(lightblue, 50%);
+            border-radius: 10px;
+        }
+</style>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>This is Loop Lifting</p>
+    <div class="btn-link align-content-center">
+        <button>
+            <a asp-controller="Home"
+               asp-action="Next">
+                Click For Your First Next Card
+            </a>
+        </button>
+    </div>
+</div>
+
