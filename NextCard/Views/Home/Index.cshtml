@@ -3,27 +3,32 @@
     }
 *@
 <style>
-    button {
-            background-color: lightblue;
-            width: 50%;
-            margin: 10px auto;
-            padding: 10px 30px;
-            color: black;
-            font-family: 'Noto Sans KR', sans-serif;
-            text-transform: uppercase;
-            border-style: dashed;
-            border-color: darken(lightblue, 50%);
-            border-radius: 10px;
+    .btn {
+        background-color: lightblue;
+        color: #FFFFFF;
+        padding: 10px 30px;
+        text-align: center;
+        opacity: 0.9;
+        font-family: 'Noto Sans KR', sans-serif;
+        border-style: dashed;
+        border-color: darken(lightblue, 50%);
+        border-radius: 10px;
+    }
+
+        .btn:hover {
+            color: white;
+            background-color: lightgray;
+            text-transform: capitalize;
         }
 </style>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>This is Loop Lifting</p>
     <div class="btn-link align-content-center">
-        <button>
+        <button class="btn">
             <a asp-controller="Home"
                asp-action="Next">
-                Click For Your First Next Card
+                click for your first next card
             </a>
         </button>
     </div>

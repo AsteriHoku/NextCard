@@ -1,16 +1,117 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-<p>Loop scheduling has made an impact in my life and I wanted to share it.<br />
-    The idea is to transform your list of tasks into an easy to manage schedule. It works particularly well for 
-    routine tasks like housework that need to be completed over and over again. Rather than a set schedule like 
-    Monday = dishes, Tuesday = vacuum, you can complete tasks in a loop whenever you have time to do the next thing.<br /><br />
-    
-    Some days we can't get anything extra done, and some days we could do a dozen things!<br /><br />
-    
-    Plus this way your brain never has to track anything or worry about the to-do list being a mile long. 
-    Just check whatever card is next, do it, and flip to the next card. 
-    I chose to highlight weight lifting exercises because it has an impact in my own life right now.<br /><br />
-</p>
+﻿<head>
+    <style>
+        .center {
+            align-content: center;
+            text-align: left;
+            width: 70%;
+            padding: 20px 0px 20px 0px;
+        }
+
+            .center .p {
+                margin: 10px;
+                font-family: 'Noto Sans KR', sans-serif;
+                font-weight: 100;
+                letter-spacing: -0.25px;
+                line-height: -0.25px;
+                word-break: break-all;
+                color: black;
+            }
+
+        .navbar {
+            background-color: black;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: lightblue;
+        }
+
+        .centercard {
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            min-height: 100vh;
+            width: 50%;
+        }
+
+        .card {
+            background-color: white;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            margin: 5px;
+            box-shadow: -20px -20px 0px 0px;
+            border-radius: 10px;
+        }
+
+        .centercard .card .p {
+            margin: 10px 0px 10px 0px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 100;
+            line-height: 1.25px;
+            letter-spacing: -0.25px;
+            font-size: 16px;
+            word-break: break-all;
+            word-wrap: pre-wrap;
+            color: black;
+        }
+
+        .btn {
+            background-color: lightblue;
+            color: #FFFFFF;
+            padding: 10px 30px;
+            text-align: center;
+            opacity: 0.9;
+            font-family: 'Noto Sans KR', sans-serif;
+            border-style: dashed;
+            border-color: darken(lightblue, 50%);
+            border-radius: 10px;
+        }
+
+            .btn:hover {
+                color: white;
+                background-color: lightgray;
+                text-transform: capitalize;
+            }
+    </style>
+
+
+
+</head>
+<body>
+    <div class="center">
+        <h1>Welcome to Loop Scheduling</h1>
+        <h3>...and a new way of task lists with NextCard!</h3><br />
+        @*TODO EDIT THIS HERE AND THEN TRANSFORM IT TO README*@
+        <p>
+            We are more likely to succeed in our tasks and reduce the stress around them if we have a flexible management system for them.
+            The idea is to loop through your list of tasks, instead of assigning particular tasks to particular times or days.<br />
+            This works particularly well for routine tasks like housework that need to be completed over and over again.
+            So, rather than a set schedule like <b>Monday = dishes</b> or <b>Tuesday = vacuum</b> you can complete tasks in a loop whenever you have time to do the next thing.<br /><br />
+
+            Loop scheduling capitalizes on the reality that some days we aren't able to get anything extra done, and some days we could do a dozen extra things! It also reduces mental stress because your brain never has to track anything or worry about the to-do list being a mile long.
+            Just <b>check out whatever card is next, do it,</b> and flip to the <b>next card!</b> <br /><br />
+
+            I chose to highlight weight lifting exercises because it has an impact in my own life right now.<br /><br />
+
+            You can read more about loop scheduling <a href="https://en.wikipedia.org/wiki/Loop_scheduling">here</a>
+            from wikipedia, or <a href="https://pambarnhill.com/loop-scheduling/#:~:text=Loop%20scheduling%20doesn't%20assign,the%20list%20and%20start%20there.">here</a> from Pam Barnhill.
+        </p>
+    </div>
+    <div class="centercard">
+        <div class="card">
+            <h1>Sample Card</h1>
+            <hr style="height: 10px; margin: 8px 0px; background-color: lightblue;">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div style="margin: 8px 0px;">
+                <button class="btn">
+                    <a asp-controller="Home"
+                       asp-action="Next">
+                        click for your first next card
+                    </a>
+                </button>
+            </div>
+        </div>
+</body>

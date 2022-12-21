@@ -1,10 +1,10 @@
-﻿namespace NextCard.Models
+﻿namespace NextCard.Models;
+public class Card
 {
-    public class Card
-    {
-        public int CardNo { get; set; }
+    public int CardNo { get; set; }
 
-        public string Title { get; set; }
+    public string Title { get; set; }
 
-    }
+    public string Lorem { get; set; }
+
 }
