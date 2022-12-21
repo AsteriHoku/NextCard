@@ -1,5 +1,5 @@
 # NEXT CARD
-## Video Demo:  <URL HERE>
+## Video Demo:  <https://youtu.be/FXOM4xcapNg>
 ### Description:
 Loop scheduling has made an impact in my life and I wish there was an app for it, so I started one. 
 We are more likely to succeed in our tasks and reduce the stress around them if we have a flexible management system for them. 
@@ -31,9 +31,12 @@ That list is now a list with a private get with a public set in CardList.cs
 
 ##### HomeCareController.cs
 This will get used in the future when List type options include housework. It currently includes a static list of these tasks.
+
 ##### ExercisesController.cs
+This will get used in the future when List type options include more that I need to distinguish exercises.
 
 ##### SelfCareController.cs
+This will get used in the future when List type options include self care.
 
 #### Models:
 
@@ -61,11 +64,8 @@ This is the landing page. You are welcomed and given a card to "click for your f
 ##### Card.cshtml
 This is the meat of it. It gives the user the view of their card, using the Card.cs Model
 
+##### NextCard.cshtml
+Created for the video
+
 ##### Shared._Favicon.cshtml
 I just like using favicons
-
-
-
-TODO namespace;
-cshtml
-video
